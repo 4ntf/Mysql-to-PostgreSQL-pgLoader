@@ -38,11 +38,11 @@ CREATE DATABASE prova_db;
 ```
 
 ## 4. Cofigurazione PostgreSQL
-- Modificare in config/postgresql.con
+- Modificare in `/etc/postgresql/17/main/postgresql.conf`
   ```bash
   listen_addresses = '*'
   ```
-- Aggiungere alla fine del file di configurazione config/pg_hba.conf 
+- Aggiungere alla fine del file di configurazione `/etc/postgresql/17/main/pg_hba.conf `
   ```bash
   host    all             all             "la_tua_sottorete/xx"         md5
   ```
