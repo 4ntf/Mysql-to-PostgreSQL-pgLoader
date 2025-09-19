@@ -1,5 +1,5 @@
 #!/bin/bash
 
-./build/bin/pgloader \
-  mysql://massimo:admin123@10.0.0.4/prova_db \
-  postgresql://postgres:admin123@localhost/prova_db
+./build/bin/pgloader
+ mysql://<utente_mysql>:<password_utente>@<IP_macchina_mysql>/<nome_db> 
+ postgresql://<utente_postgres>:<password_utente>@localhost/<nome_db>
