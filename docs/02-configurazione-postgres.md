@@ -45,4 +45,4 @@ CREATE DATABASE prova_db;
 - Aggiungere alla fine del file di configurazione config/pg_hba.conf 
   ```bash
   host    all             all             "la_tua_sottorete/xx"         md5
-```
+  ```
