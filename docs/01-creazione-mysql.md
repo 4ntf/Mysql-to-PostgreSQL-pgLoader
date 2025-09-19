@@ -37,7 +37,7 @@ INSERT INTO users (nome, email) VALUES
 ```
 ## 4. Modifica configurazione MySQL
 
-Aggiungere al file di configurazione (/etc/mysql/mysql.conf.d/mysqld.cnf):
+Aggiungere al file di configurazione /etc/mysql/mysql.conf.d/mysqld.cnf:
 ```bash
 bind-address = 0.0.0.0
 default_authentication_plugin = mysql_native_password
