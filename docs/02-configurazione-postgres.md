@@ -44,5 +44,5 @@ CREATE DATABASE prova_db;
   ```
 - Aggiungere alla fine del file di configurazione `/etc/postgresql/17/main/pg_hba.conf `
   ```bash
-  host    all             all             "la_tua_sottorete/xx"         md5
+  host  all  all  "la_tua_sottorete/xx"  md5
   ```
