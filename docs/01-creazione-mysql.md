@@ -8,7 +8,7 @@ Cambiare la password all’utente root.
 
 ## 2. Creazione utente per la migrazione
 ```sql
-CREATE USER 'massimo'@'%' IDENTIFIED BY 'admin123';
+CREATE USER 'tuo_utente'@'%' IDENTIFIED BY 'admin123';
 ```
 ## 3. Creazione DB e Tabella
 reazione DB di nome prova_db
