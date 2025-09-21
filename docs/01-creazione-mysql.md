@@ -7,8 +7,9 @@ Installare MySQL sulla macchina.
 Cambiare la password all’utente root.
 
 ## 2. Creazione utente per la migrazione
+la creazione di questo utente va fatta dopo la modifica del file di configurazione di mysqld.cnf, dove inserisco il plugin della mysql_native_password
 ```sql
-CREATE USER 'tuo_utente'@'%' IDENTIFIED BY 'admin123';
+CREATE USER 'tuo_utente'@'%' IDENTIFIED WITH mysql_native_password BY 'admin123';
 ```
 ## 3. Creazione DB e Tabella
 reazione DB di nome prova_db
