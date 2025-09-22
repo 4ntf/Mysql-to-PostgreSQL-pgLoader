@@ -5,6 +5,16 @@ Per completare la migrazione lancio il seguente comando:
 ./build/bin/pgloader mysql://<utente_mysql>:<password_utente>@<IP_macchina_mysql>/<nome_db> postgresql://<utente_postgres>:<password_utente>@localhost/<nome_db>
 ```
 Verfico se la migrazione si andata a buonfine:
-```bash
-psql -U postgres -d prova_db -c "SELECT * FROM <tua_tabella>;"
+entro nel db di postgres con 
+```sql
+\c <nome_db>
 ```
+poi verifico le tabelle
+```sql
+\d 
+```
+seleziono tutti i record dalla tabell
+```sql
+SELECT * FROM <nome_db>;
+```
+
