@@ -24,12 +24,13 @@ Utilizzo DB
 ```sql
 USE prova_db;
 ```
-Creazione Tabella di nome users
+Creazione Tabella di nome users con id, nome e mail. se voglio posso aggiungere anche la data di registrazione del record e la data di update del record.
 ```sql
 CREATE TABLE users (
     id INT AUTO_INCREMENT PRIMARY KEY,
     nome VARCHAR(50),
     email VARCHAR(100)
+    data_registrazione TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 );
 ```
 Inserimento Record nella tabella users nelle colonne nome e email
