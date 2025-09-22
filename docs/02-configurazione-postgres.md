@@ -22,7 +22,7 @@ sudo systemctl start postgresql
 ## 2. Creazione utente e DB
 Per entrare dentro a postgres devo cambaire l'utente con:
 ```bash
-sudo -i -u postrgres
+sudo -i -u postgres
 ```
 Dopo con il comando entro nel DB postrgreSQL
 ```bash
