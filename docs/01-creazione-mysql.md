@@ -7,6 +7,10 @@ Installare MySQL sulla macchina.
 Cambiare la password all’utente root.
 
 ## 2. Creazione utente per la migrazione
+In mysql laciare questo comado per togliere il carattere speciale nei requisiti delle password
+```sql
+SET GLOBAL validate_password.special_char_count = 0;
+```
 la creazione di questo utente va fatta dopo la modifica del file di configurazione di mysqld.cnf, dove inserisco il plugin della mysql_native_password nel punto 4.
 ```sql
 CREATE USER 'tuo_utente'@'%' IDENTIFIED WITH mysql_native_password BY 'admin123';
